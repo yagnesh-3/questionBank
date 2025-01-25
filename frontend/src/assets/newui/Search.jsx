@@ -51,7 +51,8 @@ const Search = () => {
         const filtersChecked = JSON.stringify(filterParams)
         console.log(filtersChecked)
         try {
-            let response = await fetch(`http://localhost:3000/api/psearch?title=${title}&page=${page}&limit=${10}&filters=${filtersChecked}`);
+            // let response = await fetch(`http://localhost:3000/api/psearch?title=${title}&page=${page}&limit=${10}&filters=${filtersChecked}`);
+            let response = await fetch(`https://questionbank-2jva.onrender.com/api/psearch?title=${title}&page=${page}&limit=${10}&filters=${filtersChecked}`);
             let data = await response.json();
             let count = parseInt(data)
             console.log(count)
@@ -63,7 +64,8 @@ const Search = () => {
     async function fetchCount() {
         console.log("count is called")
         try {
-            let response = await fetch(`http://localhost:3000/api/count`);
+            // let response = await fetch(`http://localhost:3000/api/count`);
+            let response = await fetch(`https://questionbank-2jva.onrender.com/api/count`);
             let data = await response.json();
             console.log(data)
             setTotalItems(data);

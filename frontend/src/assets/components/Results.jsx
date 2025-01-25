@@ -12,7 +12,8 @@ const Results = ({ title }) => {
     // Function to fetch data
     const fetchData = async (pageNum) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/psearch?title=${title}&page=${pageNum}&limit=${limit}`);
+            // const response = await fetch(`http://localhost:3000/api/psearch?title=${title}&page=${pageNum}&limit=${limit}`);
+            const response = await fetch(`https://questionbank-2jva.onrender.com/api/psearch?title=${title}&page=${pageNum}&limit=${limit}`);
             const data = await response.json();
             setRes(data);
         } catch (error) {
