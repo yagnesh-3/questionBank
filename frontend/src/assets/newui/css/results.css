@@ -1,0 +1,45 @@
+.questions {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+
+}
+
+.question-card {
+    width: 48%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.question-card p {
+    margin: 5px 0;
+    font-size: larger;
+}
+
+
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.question-card a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.question-card a:hover {
+    text-decoration: underline;
+}
