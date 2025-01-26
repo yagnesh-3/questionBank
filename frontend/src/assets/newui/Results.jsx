@@ -22,7 +22,7 @@ const Results = ({ data }) => {
                                         key={idx}
                                         className={option.isCorrectAnswer ? "correct-answer" : ""}
                                     >
-                                        {String.fromCharCode(idx + 65)}{') '}{option.text}
+                                        {String.fromCharCode(idx + 97)}{') '}{option.text}
                                     </p>
                                 ))}
                             </>

@@ -86,6 +86,7 @@ const Search = () => {
             <div className='container'>
 
                 <div className='filters'>
+                    <p>page {page} of {totalPages}</p>
                     <div id="pagination">
                         <button
                             onClick={() => handlePageChange(page - 1)}
