@@ -5,7 +5,7 @@
   "scripts": {
     "server": "node index.js",
     "dev": "nodemon index.js",
-    "build": "echo 'No build step for backend'"
+    "build": "mkdir -p public && echo 'Deployment Ready' > public/index.html"
   },
   "keywords": [],
   "author": "",
